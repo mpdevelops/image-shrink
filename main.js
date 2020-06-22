@@ -17,6 +17,9 @@ function createMainWindow() {
     icon: "./assets/icons/Icon_256x256.png",
     resizable: isDev ? true : false,
     backgroundColor: "white",
+    webPreferences: {
+      nodeIntegration: true,
+    },
   });
 
   mainWindow.loadFile("./app/index.html");
