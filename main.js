@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require("electron");
+const { app, BrowserWindow, Menu, ipcMain } = require("electron");
 
 // set environment
 process.env.NODE_ENV = "development";
@@ -86,6 +86,10 @@ const menu = [
       ]
     : []),
 ];
+
+ipcMain.on("image: minimize", (e, options) => {
+  console.log(options);
+});
 
 if (isMac) {
   menu.unshift({ role: "appMenu" });
