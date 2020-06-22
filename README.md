@@ -2,6 +2,8 @@
 
 Cross-platform desktop app built with Electron that takes JPG/PNG image as input and reduces file size based on user controlled size/quality scale.
 
+<img src="https://github.com/mpdevelops/misc/blob/master/Screen%20Shot%202020-06-22%20at%2012.50.03%20AM.png?raw=true"/>
+
 ## Technologies Utilized
 
 - HTML/CSS
@@ -23,9 +25,9 @@ Runs the app in the development mode.<br />
 
 ### Functionality
 
-main.js
+<a href="https://github.com/mpdevelops/image-shrink/blob/master/main.js">main.js</a>
 
 ### Interface
 
-Main Window
-About Window
+<a href="https://github.com/mpdevelops/image-shrink/blob/master/app/index.html">Main Window</a>
+<a href="https://github.com/mpdevelops/image-shrink/blob/master/app/about.html">About Window</a>
