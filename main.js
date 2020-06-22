@@ -8,13 +8,14 @@ const slash = require("slash");
 
 // set environment
 process.env.NODE_ENV = "development";
-
 const isDev = process.env.NODE_ENV !== "production" ? true : false;
 const isMac = process.platform === "darwin" ? true : false;
 
+// declare window types
 let mainWindow;
 let aboutWindow;
 
+// creates main app window
 function createMainWindow() {
   mainWindow = new BrowserWindow({
     title: "About ImageShrink",
@@ -31,6 +32,7 @@ function createMainWindow() {
   mainWindow.loadFile("./app/index.html");
 }
 
+// creates about window
 function createAboutWindow() {
   aboutWindow = new BrowserWindow({
     title: "ImageShrink",
@@ -53,6 +55,7 @@ app.on("ready", () => {
   mainWindow.on("ready", () => (mainWindow = null));
 });
 
+// defines menu options
 const menu = [
   ...(isMac
     ? [
@@ -98,6 +101,7 @@ ipcMain.on("image: minimize", (e, options) => {
   shrinkImage(options);
 });
 
+// calls on imagemin package to shrink image file size
 async function shrinkImage({ imgPath, quality, dest }) {
   try {
     const pngQuality = quality / 100;
