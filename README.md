@@ -19,15 +19,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
+Downloads all necessary node modules.
+
+### `npm start`
+
 Runs the app in the development mode.<br />
 
-## Find Code Quickly
-
-### Functionality
-
-<a href="https://github.com/mpdevelops/image-shrink/blob/master/main.js">main.js</a>
-
-### Interface
-
-<a href="https://github.com/mpdevelops/image-shrink/blob/master/app/index.html">Main Window</a><br>
-<a href="https://github.com/mpdevelops/image-shrink/blob/master/app/about.html">About Window</a>
