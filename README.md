@@ -4,13 +4,6 @@ Cross-platform desktop app built with Electron that takes JPG/PNG image as input
 
 <img src="https://github.com/mpdevelops/misc/blob/master/Screen%20Shot%202020-06-22%20at%2012.50.03%20AM.png?raw=true" width="40%"/>
 
-## Technologies Utilized
-
-- HTML/CSS
-- JavaScript
-- Node.js
-- Electron
-
 ## Run the project
 
 Clone/Download the repo.
