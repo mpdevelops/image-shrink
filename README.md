@@ -10,7 +10,7 @@ Clone/Download the repo.
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
 
 Downloads all necessary node modules.
 
